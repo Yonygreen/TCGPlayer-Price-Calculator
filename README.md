@@ -19,7 +19,17 @@ A simple and efficient Firefox extension to track cards you want to sell on TCGP
 
 ## Folder Structure
 
-TCGPlayer-Tracker/ ├── background/ → background script for context menu logic ├── bootstrap/ → Bootstrap CSS and supporting files ├── content/ → content script that interacts with TCGPlayer pages ├── icons/ → extension toolbar and tab icons ├── popup/ → HTML/JS for popup interface ├── manifest.json → Extension manifest ├── LICENSE → License info └── README.md → You're reading this!
+```
+TCGPlayer-Tracker/
+    ├── background/ → background script for context menu logic
+    ├── bootstrap/ → Bootstrap CSS and supporting files
+    ├── content/ → content script that interacts with TCGPlayer pages
+    ├── icons/ → extension toolbar and tab icons
+    ├── popup/ → HTML/JS for popup interface
+    ├── manifest.json → Extension manifest
+    ├── LICENSE → License info
+    └── README.md → You're reading this!
+```
 
 ## License
 
