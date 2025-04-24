@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "TCGPlayer Price Calculator",
+    "version": "1.0",
+    "description": "Easily see total price of cards you want to sell using market price prices",
+    "permissions": ["storage", "contextMenus"],
+    "background": {
+        "scripts": ["background/background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.tcgplayer.com/*"],
+            "js": ["content/content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "48": "icons/icon48.png",
+            "96": "icons/icon96.png"
+        }
+    },
+    "icons": {
+        "48": "icons/icon48.png",
+        "96": "icons/icon96.png"
+    },
+
+    "content_security_policy": "script-src 'self'; object-src 'self';"
+}
