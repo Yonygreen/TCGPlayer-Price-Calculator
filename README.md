@@ -4,7 +4,7 @@ A simple and efficient Firefox extension to track cards you want to sell on TCGP
 
 ## Features
 
--   ✅ Right-click on a card to instantly add it to your tracked list.
+-   ✅ Right-click on a card and select "track this card" from the context menu to instantly add it to your tracked list.
 -   🧮 Calculates total market value based on quantities.
 -   🗑️ Easily remove cards or adjust quantities.
 -   💾 Data stored locally — your list is saved even after restarting the browser.
