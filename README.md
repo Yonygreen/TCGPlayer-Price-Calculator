@@ -1,6 +1,6 @@
 # TCGPlayer Tracker
 
-A simple and efficient Firefox extension to track cards you want to sell on TCGPlayer. Quickly manage quantities and see the total price of your tracked inventory in one click.
+git ad
 
 ## Features
 
