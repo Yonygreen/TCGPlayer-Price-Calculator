@@ -28,6 +28,7 @@ browser.runtime.onMessage.addListener(async (message) => {
         const cardSetIdEl = lastRightClickedCard.querySelector(
             ".product-card__rarity__variant"
         );
+        const cardUrlEl = lastRightClickedCard.querySelector("a[href]");
         const cardSetIdElSpans = cardSetIdEl?.querySelectorAll("span") || [];
 
         if (
@@ -35,6 +36,7 @@ browser.runtime.onMessage.addListener(async (message) => {
             priceEl &&
             imageEl &&
             cardSetEl &&
+            cardUrlEl &&
             cardSetIdElSpans.length >= 2
         ) {
             const cardData = {
@@ -44,6 +46,7 @@ browser.runtime.onMessage.addListener(async (message) => {
                 setId: cardSetIdElSpans[1].textContent.trim(),
                 image: imageEl.src,
                 quantity: 1,
+                url: cardUrlEl.href, // Use the full URL from the <a> element
             };
 
             const result = await browser.storage.local.get("trackedCards");
