@@ -3,7 +3,11 @@
     "name": "TCGPlayer Price Calculator",
     "version": "1.1",
     "description": "Easily see total price of cards you want to sell using market price prices",
-    "permissions": ["storage", "contextMenus"],
+    "permissions": [
+        "storage",
+        "contextMenus",
+        "https://mp-search-api.tcgplayer.com/*"
+    ],
     "background": {
         "scripts": ["background/background.js"]
     },
