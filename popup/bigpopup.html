@@ -32,7 +32,19 @@
                 <h2 class="mb-0 text-center flex-grow-1">Tracked Cards</h2>
             </div>
             <div id="cardList"></div>
-            <div class="w-100 mt-3 d-flex justify-content-center">
+            <div class="w-100 mt-3 d-flex justify-content-center gap-2 flex-wrap">
+                <div class="d-flex align-items-center gap-2">
+                    <label for="import-preference" class="form-label mb-0" style="font-size: 0.875rem;">
+                        Import:
+                    </label>
+                    <select id="import-preference" class="form-select form-select-sm" style="width: auto; min-width: 120px;">
+                        <option value="lowest">Lowest Price</option>
+                        <option value="bling">Bling (Highest)</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary w-auto" id="import-deck-button">
+                    Import Deck from Clipboard
+                </button>
                 <button class="btn btn-danger w-auto" id="clear-button">
                     Reset All
                 </button>

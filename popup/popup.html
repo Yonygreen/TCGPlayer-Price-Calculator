@@ -10,6 +10,20 @@
     </head>
     <body class="p-3">
         <h2 class="mb-3 text-center">Tracked Cards</h2>
+        <div class="text-center mb-3">
+            <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap mb-2">
+                <label for="import-preference" class="form-label mb-0" style="font-size: 0.875rem;">
+                    Import preference:
+                </label>
+                <select id="import-preference" class="form-select form-select-sm" style="width: auto; min-width: 120px;">
+                    <option value="lowest">Lowest Price</option>
+                    <option value="bling">Bling (Highest)</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" id="import-deck-button">
+                Import Deck from Clipboard
+            </button>
+        </div>
         <div id="cardList" class="d-flex flex-column gap-3"></div>
         <div id="totalPrice" class="text-end fw-bold mt-3"></div>
         <div id="discountControls" class="text-end mt-3"></div>
